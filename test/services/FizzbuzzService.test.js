@@ -20,9 +20,9 @@ describe("Unit Tests for FizzbuzzService class", () => {
         expect(fizz3.trick).toBe("FIZZ");
     });
 
-    // test('Get a list of the explorers in node if the score not is divisible, set the property trick and the score value ', () => {    
-    //     const explorer1 = { name: "Explorer1", score: 1};
-    //     const fizz1 = FizzbuzzService.applyValidationInExplorer(explorer1);
-    //     expect(fizz1.trick).toBe(1);
-    // });
+    test('Get a list of the explorers in node if the score is not divisible by 5 y 3, set the property trick and the score value ', () => {    
+        const explorer1 = { name: "Explorer1", score: 1};
+        const fizz1 = FizzbuzzService.applyValidationInExplorer(explorer1);
+        expect(fizz1.trick).toBe(1);
+    });
 });
