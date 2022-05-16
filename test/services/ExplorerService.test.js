@@ -15,8 +15,8 @@ describe("Unit Tests for ExplorerService class", () => {
         expect(explorersInNode.length).toBe(10);          
     });
 
-    // test('Get list of Usernames By Mission', () => {        
-    //     const usernamesInNode  = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
-    //     expect(usernamesInNode).toContain('ajolonauta2');         
-    // });    
+    test('Get list of Usernames By Mission', () => {        
+        const usernamesInNode  = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(usernamesInNode).toContain('ajolonauta2');         
+    });    
 });
