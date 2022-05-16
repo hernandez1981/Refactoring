@@ -10,10 +10,10 @@ describe("Unit Tests for ExplorerService class", () => {
         expect( result[0].mission ).toBe("node");         
     });
 
-    // test('Get list of getAmountOfExplorersByMission', () => {              
-    //     const explorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-    //     expect(explorersInNode.length).toBe(10);          
-    // });
+    test('Get list of getAmountOfExplorersByMission', () => {              
+        const explorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+        expect(explorersInNode.length).toBe(10);          
+    });
 
     // test('Get list of Usernames By Mission', () => {        
     //     const usernamesInNode  = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
