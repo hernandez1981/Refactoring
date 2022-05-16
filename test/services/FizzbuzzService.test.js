@@ -14,11 +14,11 @@ describe("Unit Tests for FizzbuzzService class", () => {
         expect(fizz5.trick).toBe("BUZZ");
     });
 
-    // test('Get a list of the explorers in node if the score is just divisible by 3, set the property trick and the value FIZZ', () => {        
-    //     const explorer3 = {name: "Explorer3", score: 3}
-    //     const fizz3 = FizzbuzzService.applyValidationInExplorer(explorer3);
-    //     expect(fizz3.trick).toBe("FIZZ");
-    // });
+    test('Get a list of the explorers in node if the score is just divisible by 3, set the property trick and the value FIZZ', () => {        
+        const explorer3 = {name: "Explorer3", score: 3};
+        const fizz3 = FizzbuzzService.applyValidationInExplorer(explorer3);
+        expect(fizz3.trick).toBe("FIZZ");
+    });
 
     // test('Get a list of the explorers in node if the score not is divisible, set the property trick and the score value ', () => {    
     //     const explorer1 = { name: "Explorer1", score: 1};
