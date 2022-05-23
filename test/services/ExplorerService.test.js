@@ -12,7 +12,7 @@ describe("Unit Tests for ExplorerService class", () => {
 
     test("Get list of getAmountOfExplorersByMission", () => {              
         const explorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-        expect(explorersInNode.length).toBe(10);          
+        expect(explorersInNode).toBe(10);          
     });
 
     test("Get list of Usernames By Mission", () => {        
