@@ -14,6 +14,6 @@ describe("Unit Tests for ExplorerController class", () => {
 
     test("Get amount of explorers in node", () => {              
         const explorersInNode = ExplorerController.getExplorersAmountByMission("node");
-        expect(explorersInNode.length).toBe(10);          
+        expect(explorersInNode).toBe(10);          
     });       
 });
