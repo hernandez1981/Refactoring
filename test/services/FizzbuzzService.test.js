@@ -25,4 +25,15 @@ describe("Unit Tests for FizzbuzzService class", () => {
         const fizz1 = FizzbuzzService.applyValidationInExplorer(explorer1);
         expect(fizz1.trick).toBe(1);
     });
+
+    test("New method applyValidationInNumber if score is divisible return trick value: FIZZ, BUZZ, FIZZBUZZ or number if score not is divisible", () => {   
+        const score15 = FizzbuzzService.applyValidationInNumber(15);
+        const score5 = FizzbuzzService.applyValidationInNumber(5);
+        const score3 = FizzbuzzService.applyValidationInNumber(3);
+        const score1 = FizzbuzzService.applyValidationInNumber(1);
+        expect(score15).toBe("FIZZBUZZ");
+        expect(score5).toBe("BUZZ");
+        expect(score3).toBe("FIZZ");
+        expect(score1).toBe(1);
+    });
 });
